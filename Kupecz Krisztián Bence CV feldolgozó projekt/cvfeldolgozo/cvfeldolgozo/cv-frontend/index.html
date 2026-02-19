@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>CV Validator</title>
+    <!-- Külső CSS fájl betöltése a kinézethez -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fő tartalomi rész -->
+    <div class="container">
+        <h1>CV Feldolgozó</h1>
+
+    <!-- Fájl feltöltő rész -->
+    <div class="upload-area">
+
+        <!-- Drag & Drop zóna -->
+        <div id="dropZone" class="drop-zone">
+            Húzd ide a CV-t vagy kattints a kiválasztáshoz
+        </div>
+
+        <!--  fájlválasztó -->
+        <input type="file" id="fileInput">
+
+        <!-- Feltöltés gomb, JavaScript uploadCV() függvényt hív -->
+        <button onclick="uploadCV()">Feltöltés</button>
+    </div>
+
+    <!-- Feldolgozás közbeni animált szöveg -->
+    <div id="loading" class="loading hidden">Feldolgozás...</div>
+
+        <hr>
+
+        <!-- AI által kinyert adatok megjelenítése -->
+        <h2>Eredmény</h2>
+
+        <div id="result"></div>
+
+        <!-- Megfelelőségi százalék -->
+        <h2>Megfelelőség</h2>
+
+        <!-- Progress bar -->
+        <div class="progress-container">
+        <div id="progressBar" class="progress-bar">0%</div>
+        </div>
+
+        <!-- Szöveges státusz  -->
+        <div id="statusText"></div>
+
+        <!-- Validációs szabályok táblázata -->
+        <h2>Validáció</h2>
+        <table id="validationTable">
+            <thead>
+                <tr>
+                    <th>Mező</th>
+                    <th>Állapot</th>
+                    <th>Üzenet</th>
+                    
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- JavaScript  betöltése -->
+    <script src="script.js"></script>
+</body>
+</html>

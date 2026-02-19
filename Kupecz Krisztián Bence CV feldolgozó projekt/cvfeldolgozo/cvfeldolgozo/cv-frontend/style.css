@@ -1,0 +1,179 @@
+/* Az egész oldal alap kinézete */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #f7e7b4, #f2d98a);
+    margin: 0;
+}
+
+/* Középre helyezett fő tartalomkártya */
+.container {
+    width: 900px;
+    margin: 60px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+/* Cím */
+h1 {
+    margin-top: 0;
+    color: #6b5200;
+    letter-spacing: 1px;
+}
+
+/* Feltöltő rész */
+.upload-area {
+    margin: 25px 0 30px 0;
+}
+
+/* Fájl kivál. input */
+input[type="file"] {
+    padding: 8px;
+}
+
+/* Gomb */
+button {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #c9a227;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Középre helyezett fő tartalomkártya */
+button:hover {
+    background: #a8871f;
+    transform: scale(1.05);
+}
+
+/* Eredmény blokk */
+#result {
+    text-align: left;
+    background: #fff9e6;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    border: 1px solid #e6cc70;
+}
+
+/* Táblázat */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Fejléc cellák */
+th {
+    background: #d4af37;
+    color: white;
+    padding: 12px;
+}
+
+/* Adat cellák */
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Hover sor */
+tr:hover {
+    background: #fff5cc;
+}
+
+/* Állapot középre */
+td:nth-child(2) {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Valid / invalid */
+.valid {
+    color: #2e7d32;
+}
+
+.invalid {
+    color: #c62828;
+}
+
+/* Hibás sor teljes háttér kiemelése */
+.fail {
+    background: #ffebee;
+}
+
+/* Progress bar */
+
+/* Progress bar külső kerete */
+.progress-container {
+    width: 100%;
+    background: #eee;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px 0;
+    height: 28px;
+}
+
+/* Progress bar belső mozgó része */
+.progress-bar {
+    height: 100%;
+    width: 0%;/* JS  növelni */
+    background: linear-gradient(90deg, #e74c3c, #f1c40f, #2ecc71);
+    color: black;
+    text-align: center;
+    line-height: 28px;
+    font-weight: bold;
+    transition: width 0.6s ease;
+}
+
+/* Feldolgozás állapot szöveg */
+#statusText {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Betöltési animáció szöveg */
+.loading {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    animation: pulse 1s infinite;
+}
+
+/* Elrejtett elemek */
+.hidden {
+    display: none;
+}
+
+/* pulse animáció */
+@keyframes pulse {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
+}
+
+/* Drag & Drop feltöltési terület */
+.drop-zone {
+    border: 2px dashed #999;/* Szaggatott keret */
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Amikor fájlt húzunk fölé */
+.drop-zone.dragover {
+    background: #fff3cd;/* Sárga kiemelés */
+    border-color: #f1c40f;/* Keret színe változik */
+}
