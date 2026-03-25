@@ -164,9 +164,9 @@ The system validates:
 
 Each field produces a validation result and contributes to an overall score.
 
-<img width="945" height="431" alt="image" src="https://github.com/user-attachments/assets/dd3e93c7-cc23-49fd-b6cc-498a8c77b281" />
+<img width="1920" height="1020" alt="Képernyőkép 2026-02-17 170616" src="https://github.com/user-attachments/assets/0ee17722-c393-4587-a4f4-9b075100cbbb" />
 
-<img width="945" height="438" alt="image" src="https://github.com/user-attachments/assets/66d2dda3-b44e-4ab6-883f-f1fd2a8cbf37" />
+<img width="1920" height="1020" alt="Képernyőkép 2026-02-17 170701" src="https://github.com/user-attachments/assets/ae95e408-f55e-472f-be1c-e09077254e0b" />
 
 ---
 
