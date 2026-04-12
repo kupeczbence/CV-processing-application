@@ -195,4 +195,4 @@ The project uses the following key Maven dependencies:
 
 - LinkedIn: www.linkedin.com/in/bence-kupecz-119701305
 - GitHub: https://github.com/kupeczbence
-- https://www.kupeczbence.com/
+- Portfolio: https://www.kupeczbence.com/
